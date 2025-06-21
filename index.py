@@ -116,7 +116,7 @@ class WSS:
         else:
             pass     
 
-    async def ws(self, SOCK, path):
+    async def ws(self, SOCK, path=None):
 
         UID = int(time.time() * 1000)
         self.UID_SOCK.update({UID: SOCK})
